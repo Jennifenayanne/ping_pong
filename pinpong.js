@@ -27,3 +27,19 @@ function setup ( ){
 function draw(){
   
 }
+
+function movimentoBoloinha(){
+  circle(xBolinha,yBolinha,diametro);
+  
+    xBolinha += velocidadeXBolinha;
+    yBolinha += velocidadeYBolinha;
+    if(xBolinha + raio > width || xBolinha-raio < 0){
+       velocidadeXBOlinha *= -1;
+    }
+    if(yBolinha + raio > height || yBolinhya - raio < 0){
+       velocidadeYBolinha *= -1}}
+
+function requete(xRaquete , yRaquete){
+    rect(xRaquete,yRaquete,10,90)
+  
+}
