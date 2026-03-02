@@ -55,6 +55,11 @@ function draw(){
      yBolinha +raio > yRaquete){
     velocidadeXBolinha *= -1;
     raquetada.play()}
+  if(xBolinha + raio > xRaqueteOponente &
+     yBolinha - raio < yRaqueteOponente + 90 &
+     yBolinha + raio > yRaqueteOponente) {
+    velocidadeXBolinha *= -1
+    raquetada.play()}
 }
 
 function movimentoBoloinha(){
